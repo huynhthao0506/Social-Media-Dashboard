@@ -1,0 +1,21 @@
+@use '../util' as *;
+.card-item {
+    display: grid;
+    gap: rem(30);
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,auto);
+    justify-items: start;
+}
+.card__update, img {
+    justify-self: end;
+}
+.card-item .card__update {
+    margin: 0;
+}
+.card__count, .card-item .card__update {
+    align-self: end;
+}
+.card__sub {
+    font-weight: 600;
+    color: var(--text-color1);
+}

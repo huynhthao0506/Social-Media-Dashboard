@@ -1,0 +1,20 @@
+@use '../globals' as *;
+@use '../util' as *;
+.heading {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: rem(50);
+    align-items: center;
+    justify-content: space-between;
+}
+.heading__toggle {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.toggle-sub {
+    color: var(--toggle);
+    font-weight: 800;
+    font-size: rem(15);
+    padding-right: rem(5);
+}

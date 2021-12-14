@@ -1,0 +1,33 @@
+@use '../util' as *;
+.container {
+    margin: 0 auto rem(40);
+    max-width: rem(1200);
+}
+h1 {
+    font-size: rem(25);
+    margin-bottom: rem(8);
+}
+h2 {
+    font-size: rem(24);
+    color: var(--text-color1);
+}
+h1, h2, p {
+    font-weight: bolder;
+    line-height: 1.1;
+    
+}
+a, a:visited, a:active {
+    text-decoration: none;
+}
+p {
+    font-size: rem(15);
+    color: var(--text-color1);
+}
+.main {
+    margin: rem(20) auto;
+}
+.footer {
+    text-align: center;
+    font-size: rem(12);
+    margin-bottom: rem(10);
+}
