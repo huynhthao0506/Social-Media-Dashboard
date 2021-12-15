@@ -13,6 +13,8 @@
     text-align: center;
     transition: background 150ms ease-in-out;
     cursor: pointer;
+    overflow: hidden;
+    
     &:hover {
         background: var(--card-hover);
     }

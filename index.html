@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frontend Mentor | Phuong Thao</title>
     <link rel="stylesheet" href="./dist/index.css">
+    <script defer src="./dist/script.js"></script>
 </head>
 <body>
     <div class="heading container">
@@ -13,13 +14,16 @@
             <h1>Social Media Dashboard 🔥🔥🔥🔥🔥</h1>
             <p class="heading__sub">Total Followers: 23,004</p>
         </div>
-        <div class="heading__toggle">
-            <div class="toggle-sub">Dark mode</div>
-            <label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
-            </label>
+        <fieldset class="header__toggle toggle" aria-label="theme toggle" role="radiogroup">
+        <label for="dark">Dark Mode <span class="visually-hidden">On</span></label>
+        <div class="toggle__wrapper">
+          <input type="radio" name="theme" id="dark" />
+          <input type="radio" name="theme" id="light" />
+          <span aria-hidden="true" class="toggle__background"></span>
+          <span aria-hidden="true" class="toggle__button"></span>
         </div>
+        <label for="light" class="visually-hidden">Dark Mode Off</label>
+      </fieldset>
     </div>
     <div class="main container">
       <div class="cards">
